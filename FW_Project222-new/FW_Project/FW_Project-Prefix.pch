@@ -1,0 +1,37 @@
+//
+// Prefix header for all source files of the 'FW_Project' target in the 'FW_Project' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "BaseViewController.h"
+    #import "publicDefine.h"
+    #import "UIViewAdditions.h"
+/////RAC文件头需要用到的添加到这里//////////
+    #import "RACSignal+Operations.h"
+    #import "RACScheduler.h"
+    #import "RACSubscriptingAssignmentTrampoline.h"
+    #import "NSObject+RACPropertySubscribing.h"
+
+    #import "classAppDelegate.h"
+    #import "CRNavigationController.h"
+
+    #import "FW_CustomButton.h"
+    #import "JSONValueTransformer.h"
+    #import "MBTipWindow.h"
+    #import "TBHint.h"
+    #import "UILabel+dynamicSizeMe.h"
+    #import "Toast+UIView.h"
+//////************///////////
+#endif
